@@ -2,5 +2,5 @@
 
 interface ElectricityInterface
 {
-  public function receivePower();
+  public function supplyPower();
 }
