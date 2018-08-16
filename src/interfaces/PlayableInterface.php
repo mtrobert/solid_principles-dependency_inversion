@@ -4,5 +4,5 @@ use App\src\interfaces\ElectricityInterface;
 
 interface PlayableInterface
 {
-  public function play(ElectricityInterface $power);
+  public function play();
 }
