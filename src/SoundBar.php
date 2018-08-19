@@ -1,20 +1,20 @@
 <?php namespace App\src;
 
-use App\src\interfaces\{ElectricityInterface, PlayableInterface};
+use App\src\interfaces\{Powerableinterface, PlayableInterface};
 
 class Soundbar implements PlayableInterface
 {
-  protected $energy;
+  protected $power;
 
-  public function __construct(ElectricityInterface $energy)
+  public function __construct(PowerableInterface $power)
   {
-    $this->energy = $energy;
+    $this->power = $power;
   }
 
 
   public function play()
   {
-    $power = $this->energy->supplyPower();
+    $power = $this->power->getPower();
     var_dump($power .' received. Soundbar is playing.');
   }
 }
